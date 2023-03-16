@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+}
+
+.header {
+  height: auto;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.headerText {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  /* position: relative; */
+  width: 100%;
+}
+
+.leftContainer {
+  width: 60%;
+
+  overflow: hidden;
+}
+
+.background {
+  height: 100vh;
+  filter: blur(7px);
+  object-fit: cover;
+  position: absolute;
+}
+
+.logo {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.rightContainer {
+  width: 40%;
+  display: flex;
+}
+
+.wifi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 20rem;
+}
