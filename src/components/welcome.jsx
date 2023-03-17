@@ -19,6 +19,11 @@ function Welcome() {
         </div>
         <div className="rightContainer">
           <img src={Wifi} className="wifi" alt="wifiIcon" />
+          <div className="rCText">
+            <p style={{ fontSize: "3rem" }}>WiFi</p>
+            <p>QUALITYMINDS</p>
+            <p>test1234</p>
+          </div>
         </div>
       </div>
     </div>

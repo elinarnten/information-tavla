@@ -1,11 +1,12 @@
 .container {
-  position: relative;
+  height: 100vh;
+  background-color: whitesmoke;
 }
 
 .header {
   height: auto;
   background-color: white;
-  position: absolute;
+
   display: flex;
   align-items: center;
   width: 100%;
@@ -21,21 +22,18 @@
 
 .content {
   display: flex;
-  /* position: relative; */
-  width: 100%;
+  overflow: hidden;
 }
 
 .leftContainer {
   width: 60%;
-
   overflow: hidden;
 }
 
 .background {
-  height: 100vh;
+  width: 100%;
   filter: blur(7px);
   object-fit: cover;
-  position: absolute;
 }
 
 .logo {
@@ -47,12 +45,32 @@
 .rightContainer {
   width: 40%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .wifi {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20rem;
+  height: 18rem;
+  width: 30rem;
+  margin: 2rem;
+}
+
+.rCText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b5d8b;
+  color: white;
+  padding: 2rem;
+  font-size: x-large;
   width: 20rem;
+}
+
+.rCText p {
+  margin: 1rem;
 }
