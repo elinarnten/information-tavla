@@ -2,7 +2,6 @@ import Background from "../assets/background.jpg";
 import Logo from "../assets/Company_Logo_white-transparent.png";
 import Wifi from "../assets/wifiIcon.png";
 import "./welcome.css";
-import Clock from "react-live-clock";
 import { useEffect, useState } from "react";
 
 function Welcome() {
