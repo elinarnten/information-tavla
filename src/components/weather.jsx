@@ -7,7 +7,7 @@ function Weather() {
 
   useEffect(() => {
     fetch(
-      `https://api.open-meteo.com/v1/forecast?latitude=57.71&longitude=11.97&hourly=temperature_2m&current_weather=true`
+      `https://api.open-meteo.com/v1/forecast?latitude=57.71&longitude=11.97&hourly=temperature_2m`
     )
       .then((response) => {
         if (!response.ok) {
@@ -35,12 +35,13 @@ function Weather() {
       {loading && <div>One moment please</div>}
       {error && <div>{`Something went wrong ${error}`}</div>}
       <ul>
-        {data &&
-          data.map(({ id, title }) => (
-            <li key={id}>
-              <h3>{title}</h3>
-            </li>
-          ))}
+        {data && (
+          <li key={data.id}>
+            <h3>{data.latitude}</h3>
+            <h3>{data.longitude}</h3>
+            <h3>{data.timezone}</h3>
+          </li>
+        )}
       </ul>
     </div>
   );
