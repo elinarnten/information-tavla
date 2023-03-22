@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import Welcome from "./components/welcome";
 import Weather from "./components/weather";
 import Employee from "./components/employee";
+import News from "./components/news";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,7 @@ root.render(
     <Welcome />
     <Weather />
     <Employee />
+    <News />
     {/* '<App /> */}
   </React.StrictMode>
 );
