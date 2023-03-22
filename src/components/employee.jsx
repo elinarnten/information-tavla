@@ -62,7 +62,7 @@ function Employee() {
     },
     {
       id: 13,
-      name: "Jakob Petterson",
+      name: "Jakob Pettersson",
       location: "Volvo",
     },
     {
