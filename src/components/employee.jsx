@@ -88,7 +88,7 @@ function Employee() {
     {
       id: 18,
       name: "Martin Drugge",
-      location: "Ahlström",
+      location: "Alstom",
     },
     {
       id: 19,
