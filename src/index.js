@@ -7,14 +7,16 @@ import Welcome from "./components/welcome";
 import Weather from "./components/weather";
 import Employee from "./components/employee";
 import News from "./components/news";
+import Departures from "./components/departures";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Welcome />
-    <Weather />
+    {/* <Weather /> */}
     <Employee />
-    <News />
+    {/* <News /> */}
+    <Departures />
     {/* '<App /> */}
   </React.StrictMode>
 );
