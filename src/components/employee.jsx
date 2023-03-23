@@ -105,6 +105,11 @@ function Employee() {
       name: "Mattias Torstensson",
       location: "Husqvarna",
     },
+    {
+      id: 22,
+      name: "Robert Hennersten-Manley",
+      location: "Alstom",
+    },
   ];
   return (
     <div
