@@ -24,7 +24,7 @@ function Welcome() {
     <div className="container">
       <header className="header">
         <p className="headerText">
-          Välkommen till <strong>Testscouts!</strong>
+          Välkommen till <strong>Test Scouts!</strong>
         </p>
         <div className="timeDate">
           <p>{time.toLocaleTimeString()}</p>
