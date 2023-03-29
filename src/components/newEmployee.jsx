@@ -15,6 +15,14 @@ function NewEmployee() {
         </div>
       </div>
       <div className="right">
+        <div className="profileContainer">
+          <img
+            src="https://api.lorem.space/image/face?w=250&h=250"
+            alt="profileIMG"
+            style={{ borderRadius: "50%", border: "solid white 2px" }}
+          />
+          <h2>Lorem Ipsum</h2>
+        </div>
         <div style={{ position: "absolute", bottom: "0px", width: "100%" }}>
           <img
             src={ClappingHands}

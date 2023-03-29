@@ -28,11 +28,24 @@
 
 .welcomeText h2 {
   margin: 0.5rem;
-  font-size: xx-large;
+  font-size: 4rem;
 }
 
 .right {
   background-color: #2b5d8b;
   width: 50%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
 }
