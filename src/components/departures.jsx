@@ -3,6 +3,7 @@ function Departures() {
     <div style={{ height: "" }}>
       <iframe
         style={{ width: "100%", height: "100vh" }}
+        title="västtrafik"
         src="https://avgangstavla.vasttrafik.se/?source=vasttrafikse-depatureboardlinkgenerator&stopAreaGid=9021014007172000"
       ></iframe>
       {/* <iframe
