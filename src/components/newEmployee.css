@@ -1,0 +1,38 @@
+.empContainer {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeTextContainer {
+  min-width: 20rem;
+  background-color: #2b5d8b;
+  box-shadow: 10px 10px 0.5px #22394e;
+  margin: 2rem;
+  height: auto;
+  position: absolute;
+}
+
+.welcomeText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+}
+
+.welcomeText h2 {
+  margin: 0.5rem;
+  font-size: xx-large;
+}
+
+.right {
+  background-color: #2b5d8b;
+  width: 50%;
+  position: relative;
+}

@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import App from './App';
 import reportWebVitals from "./reportWebVitals";
 import Welcome from "./components/welcome";
 import Weather from "./components/weather";
 import Employee from "./components/employee";
 import News from "./components/news";
 import Departures from "./components/departures";
+import NewEmployee from "./components/newEmployee";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,8 +16,8 @@ root.render(
     {/* <Weather /> */}
     <Employee />
     {/* <News /> */}
-    <Departures />
-    {/* '<App /> */}
+    {/* <Departures /> */}
+    <NewEmployee />
   </React.StrictMode>
 );
 
