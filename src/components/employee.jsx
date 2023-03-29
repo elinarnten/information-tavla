@@ -120,7 +120,7 @@ function Employee() {
         alignItems: "center",
       }}
     >
-      <h1>Scouter</h1>
+      <h1 style={{ fontSize: "xxx-large" }}>Scouter</h1>
       <div
         style={{
           display: "flex",
