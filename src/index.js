@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Welcome from "./components/welcome";
-import Weather from "./components/weather";
+// import Weather from "./components/weather";
 import Employee from "./components/employee";
-import News from "./components/news";
+// import News from "./components/news";
 import Departures from "./components/departures";
 import NewEmployee from "./components/newEmployee";
 
@@ -16,7 +16,7 @@ root.render(
     {/* <Weather /> */}
     <Employee />
     {/* <News /> */}
-    {/* <Departures /> */}
+    <Departures />
     <NewEmployee />
   </React.StrictMode>
 );
