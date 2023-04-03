@@ -4,18 +4,18 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Welcome from "./components/welcome";
 // import Weather from "./components/weather";
-// import Employee from "./components/employee";
+import Employee from "./components/employee";
 // import News from "./components/news";
 import Departures from "./components/departures";
 import NewEmployee from "./components/newEmployee";
-import Birthdays from "./components/birthdays";
+import { Birthdays } from "./components/birthdays";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Welcome />
     {/* <Weather /> */}
-    {/* <Employee /> */}
+    <Employee />
     {/* <News /> */}
     <Departures />
     <NewEmployee />
