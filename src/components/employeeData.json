@@ -3,12 +3,14 @@
     {
       "id": 1,
       "name": "Pierre Alenbrink",
-      "location": "Astra Zeneca"
+      "location": "Astra Zeneca",
+      "bDay": "04-04"
     },
     {
       "id": 2,
       "name": "Tobias Andblad",
-      "location": "Volvo"
+      "location": "Volvo",
+      "bDay": "04-03"
     },
     {
       "id": 3,
