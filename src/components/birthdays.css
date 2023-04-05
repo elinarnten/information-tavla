@@ -1,0 +1,14 @@
+.congratContainer {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+}
+.congratText {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
