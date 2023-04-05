@@ -1,5 +1,6 @@
-// import { useEffect, useState } from "react";
 import employeeData from "./employeeData.json";
+import Conffetti from "../assets/conffetti.png";
+import "./birthdays.css";
 
 function Birthdays() {
   const d = new Date().toISOString();
@@ -9,12 +10,30 @@ function Birthdays() {
   console.log(today);
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <img
+        src={Conffetti}
+        alt="conffetti"
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      />
       {employeeData.employeeData.map((employeeData) => (
-        <div>
-          {employeeData.bDay === today ? (
-            <p>Grattis! {employeeData.name} </p>
-          ) : null}
+        <div className="congratContainer">
+          <div className="congratText">
+            {employeeData.bDay === today ? (
+              <h1>Grattis på födelsedagen {employeeData.name}!</h1>
+            ) : null}
+          </div>
         </div>
       ))}
     </div>
