@@ -8,7 +8,7 @@ import Employee from "./components/employee";
 // import News from "./components/news";
 import Departures from "./components/departures";
 import NewEmployee from "./components/newEmployee";
-import { Birthdays } from "./components/birthdays";
+import Birthdays from "./components/birthdays";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,7 +17,7 @@ root.render(
     {/* <Weather /> */}
     <Employee />
     {/* <News /> */}
-    <Departures />
+    {/* <Departures /> */}
     <NewEmployee />
     <Birthdays />
   </React.StrictMode>
