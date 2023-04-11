@@ -1,6 +1,7 @@
 import employeeData from "./employeeData.json";
-import Conffetti from "../assets/conffetti.png";
 import "./birthdays.css";
+import BirthdayCake from "../assets/birthdayCakeVector.png";
+import Confetti from "react-confetti";
 
 function Birthdays() {
   const d = new Date().toISOString();
@@ -15,23 +16,23 @@ function Birthdays() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        background: "linear-gradient(#e66465, #9198e5)",
       }}
     >
-      <img
-        src={Conffetti}
-        alt="conffetti"
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      />
+      <Confetti style={{ position: "unset" }} />
       {employeeData.employeeData.map((employeeData) => (
         <div className="congratContainer">
           <div className="congratText">
             {employeeData.bDay === today ? (
-              <h1>Grattis på födelsedagen {employeeData.name}!</h1>
+              <div>
+                <h1>Grattis på födelsedagen</h1>
+                <h1>{employeeData.name}!</h1>
+                <img
+                  src={BirthdayCake}
+                  alt=""
+                  style={{ height: "20rem", width: "20rem" }}
+                />
+              </div>
             ) : null}
           </div>
         </div>
