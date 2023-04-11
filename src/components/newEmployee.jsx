@@ -17,7 +17,8 @@ function NewEmployee() {
       <div className="right">
         <div className="profileContainer">
           <img
-            src="https://api.lorem.space/image/face?w=250&h=250"
+            // src="https://api.lorem.space/image/face?w=250&h=250"
+            src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=ffdfbf"
             alt="profileIMG"
             style={{ borderRadius: "50%", border: "solid white 2px" }}
           />
