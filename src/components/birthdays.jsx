@@ -33,7 +33,11 @@ function Birthdays() {
                   style={{ height: "20rem", width: "20rem" }}
                 />
               </div>
-            ) : null}
+            ) : (
+              <div>
+                <h1>Birthday Loading..</h1>
+              </div>
+            )}
           </div>
         </div>
       ))}
