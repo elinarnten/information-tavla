@@ -10,6 +10,7 @@ function Birthdays() {
   const today = d.slice(5, 10);
   console.log(today);
 
+  let foundBirthday = false;
   return (
     <div
       style={{
@@ -17,30 +18,41 @@ function Birthdays() {
         justifyContent: "center",
         alignItems: "center",
         background: "linear-gradient(#e66465, #9198e5)",
+        height: "100%",
       }}
     >
       <Confetti style={{ position: "unset" }} />
-      {employeeData.employeeData.map((employeeData) => (
-        <div className="congratContainer">
-          <div className="congratText">
-            {employeeData.bDay === today ? (
-              <div>
-                <h1>Grattis på födelsedagen</h1>
-                <h1>{employeeData.name}!</h1>
-                <img
-                  src={BirthdayCake}
-                  alt=""
-                  style={{ height: "20rem", width: "20rem" }}
-                />
+
+      {employeeData.employeeData.map((employeeData) => {
+        if (employeeData.bDay === today) {
+          foundBirthday = true;
+          return (
+            <div className="congratContainer">
+              <div className="congratText">
+                <div>
+                  <h1>Grattis på födelsedagen</h1>
+                  <h1>{employeeData.name}!</h1>
+                  <img
+                    src={BirthdayCake}
+                    alt=""
+                    style={{
+                      height: "20rem",
+                      width: "20rem",
+                    }}
+                  />
+                </div>
               </div>
-            ) : (
-              <div>
-                <h1>Birthday Loading..</h1>
-              </div>
-            )}
-          </div>
+            </div>
+          );
+        } else {
+          return null;
+        }
+      })}
+      {foundBirthday ? null : (
+        <div style={{ position: "absolute" }}>
+          <h1 style={{ color: "white" }}>Birthday loading...</h1>
         </div>
-      ))}
+      )}
     </div>
   );
 }
