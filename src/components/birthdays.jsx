@@ -29,9 +29,9 @@ function Birthdays() {
           return (
             <div className="congratContainer">
               <div className="congratText">
-                <div>
-                  <h1>Grattis på födelsedagen</h1>
-                  <h1>{employeeData.name}!</h1>
+                <h1>Grattis på födelsedagen</h1>
+                <h1>{employeeData.name}!</h1>
+                <div style={{ display: "flex", justifyContent: "center" }}>
                   <img
                     src={BirthdayCake}
                     alt=""

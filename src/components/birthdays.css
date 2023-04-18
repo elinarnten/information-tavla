@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: bolder;
