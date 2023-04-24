@@ -18,11 +18,10 @@ function Birthdays() {
         justifyContent: "center",
         alignItems: "center",
         background: "linear-gradient(#e66465, #9198e5)",
-        height: "100%",
+        height: "100vh",
       }}
     >
-      <Confetti style={{ position: "unset" }} />
-
+      <Confetti />
       {employeeData.employeeData.map((employeeData) => {
         if (employeeData.bDay === today) {
           foundBirthday = true;
