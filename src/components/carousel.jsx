@@ -5,6 +5,7 @@ import NewEmployee from "./newEmployee";
 import Welcome from "./welcome";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Departures from "./departures";
 
 function Carousel() {
   var settings = {
@@ -40,6 +41,9 @@ function Carousel() {
       </div>
       <div>
         <Birthdays />
+      </div>
+      <div>
+        <Departures />
       </div>
     </Slider>
   );
