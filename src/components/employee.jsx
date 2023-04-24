@@ -7,6 +7,8 @@ function Employee() {
         flexDirection: " column",
         justifyContent: "center",
         alignItems: "center",
+        backgroundColor: "whiteSmoke",
+        height: "100vh",
       }}
     >
       <h1 style={{ fontSize: "xxx-large" }}>Scouter</h1>
@@ -22,10 +24,11 @@ function Employee() {
           return (
             <div
               style={{
-                backgroundColor: "yellow",
+                backgroundColor: "#2b5d8b",
                 margin: "2rem",
                 padding: "1rem",
                 width: "auto",
+                color: "white",
               }}
               key={employeeData.id}
             >
