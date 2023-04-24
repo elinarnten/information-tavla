@@ -1,5 +1,6 @@
 .empContainer {
   display: flex;
+  height: 100vh;
 }
 
 .left {
@@ -7,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .welcomeTextContainer {
@@ -39,6 +41,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .profileContainer {

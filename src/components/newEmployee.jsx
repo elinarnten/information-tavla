@@ -6,7 +6,11 @@ function NewEmployee() {
   return (
     <div className="empContainer">
       <div className="left">
-        <img src={Conffetti} alt="" style={{ objectFit: "cover" }} />
+        <img
+          src={Conffetti}
+          alt=""
+          style={{ objectFit: "cover", top: "0px" }}
+        />
         <div className="welcomeTextContainer">
           <div className="welcomeText">
             <h2>Varmt välkommen</h2>
